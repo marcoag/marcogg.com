@@ -2,6 +2,10 @@
 layout: page
 title: Talks
 ---
+# Data Science Workhop: hacking OKcupid through data analysis
+{% include widgets/youtube_player.html id="66BoDWwQ8LI" %}
+# Learn How To Build Your Own Self-Driving Car
+{% include widgets/youtube_player.html id="5CVPiTqSJlQ" %}
 # FOSSASIA 2018, Workshop: LearnBot 2.0: Build your own robot and learn with it!
 {% include widgets/youtube_player.html id="jtN2Fttu8iE" %}
 # FOSSASIA 2017: LearnBot, the open source robot for education
