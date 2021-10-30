@@ -8,4 +8,5 @@ paginate: 15
 baseurl: /
 plugins: [jekyll-gist]
 plugins: [jekyll-scholar]
+plugins: [jekyll-paginate]
 permalink: /:year/:month/:title.html
