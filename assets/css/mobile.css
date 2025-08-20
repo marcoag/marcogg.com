@@ -1,3 +1,14 @@
+/* Desktop styles - ensure mobile elements are hidden */
+@media all and (min-width: 769px) {
+    .mobile-menu {
+        display: none !important;
+    }
+
+    .burger-menu {
+        display: none !important;
+    }
+}
+
 @media all and (max-width: 890px) {
     #head-search {
         display: none;
