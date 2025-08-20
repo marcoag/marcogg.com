@@ -1,0 +1,24 @@
+---
+---
+<div class="bibliography-entry">
+  <div>
+    {{ entry.author }}<br/>
+    <strong>"{{ entry.title }}"</strong><br/>
+    {% if entry.journal %}
+      {{ entry.journal }}{% if entry.volume %}, vol. {{ entry.volume }}{% endif %}{% if entry.number %}, no. {{ entry.number }}{% endif %}{% if entry.pages %}, pp. {{ entry.pages }}{% endif %}
+    {% elsif entry.booktitle %}
+      {{ entry.booktitle }}
+    {% endif %}
+    {% if entry.year %}, {{ entry.year }}{% endif %}
+    {% if entry.organization %}, {{ entry.organization }}{% endif %}
+    {% if entry.publisher %}, {{ entry.publisher }}{% endif %}
+    {% if entry.pdf or entry.url %}
+      {% if entry.pdf %}
+        <a href="{{ entry.pdf }}" class="bib-link bib-pdf-link">PDF</a>
+      {% endif %}
+      {% if entry.url %}
+        <a href="{{ entry.url }}" class="bib-link bib-url-link">Link</a>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>

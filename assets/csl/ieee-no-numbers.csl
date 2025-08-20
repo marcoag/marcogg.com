@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
+  <info>
+    <title>IEEE (no numbering)</title>
+    <id>http://www.zotero.org/styles/ieee-no-numbers</id>
+    <category citation-format="author-date"/>
+    <category field="engineering"/>
+    <updated>2023-01-01T00:00:00+00:00</updated>
+  </info>
+  
+  <bibliography hanging-indent="true" et-al-min="7" et-al-use-first="1" entry-spacing="0" second-field-align="flush">
+    <layout>
+      <group delimiter="">
+        <names variable="author">
+          <name initialize-with=". " delimiter=", " and="text"/>
+        </names>
+        <text value=", "/>
+        <text variable="title" quotes="true"/>
+        <text value="&lt;br/&gt;"/>
+        <choose>
+          <if type="paper-conference">
+            <group delimiter=", ">
+              <text variable="container-title" font-style="italic"/>
+              <text variable="publisher-place"/>
+              <date variable="issued">
+                <date-part name="year"/>
+              </date>
+            </group>
+          </if>
+          <else-if type="article-journal">
+            <group delimiter=", ">
+              <text variable="container-title" font-style="italic"/>
+              <group delimiter=" ">
+                <text term="volume" form="short"/>
+                <text variable="volume"/>
+              </group>
+              <group delimiter=" ">
+                <text term="issue" form="short"/>
+                <text variable="issue"/>
+              </group>
+              <group delimiter=" ">
+                <text term="page" form="short"/>
+                <text variable="page"/>
+              </group>
+              <date variable="issued">
+                <date-part name="year"/>
+              </date>
+            </group>
+          </else-if>
+          <else>
+            <group delimiter=", ">
+              <text variable="publisher"/>
+              <date variable="issued">
+                <date-part name="year"/>
+              </date>
+            </group>
+          </else>
+        </choose>
+      </group>
+    </layout>
+  </bibliography>
+</style>

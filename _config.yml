@@ -6,7 +6,13 @@ highlighter: rouge
 logo: false
 paginate: 15
 baseurl: /
-plugins: [jekyll-gist]
-plugins: [jekyll-scholar]
-plugins: [jekyll-paginate]
+plugins: [jekyll-gist, jekyll-scholar, jekyll-paginate]
 permalink: /:year/:month/:title.html
+
+scholar:
+  style: ./assets/csl/ieee-no-numbers.csl
+  source: ./
+  bibliography: publications.bib
+  bibliography_template: bib
+  sort_by: year
+  order: descending

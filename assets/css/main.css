@@ -28,8 +28,9 @@ img, video, iframe {
 }
 
 header {
-    max-width: 80%;
+    max-width: 1800px;
     margin: 0 auto;
+    padding: 0 20px;
     background-image: url(/assets/img/bg.jpg);
     background-size: cover;
     color: rgba(255, 255, 255, .75);
@@ -74,8 +75,9 @@ footer {
 }
 
 .footer-wrapper { 
-    max-width: 80%;
+    max-width: 1800px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .ui.transparent.icon.input {
@@ -125,4 +127,32 @@ main {
 
 .post-container {
     font-family: "Open Sans", sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Bibliography styles */
+.bibliography-entry {
+    margin-bottom: 20px;
+    min-height: 2.5em;
+    line-height: 1.4;
+}
+
+.bib-link {
+    margin-left: 10px;
+    padding: 2px 6px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.bib-pdf-link {
+    background: #007bff;
+}
+
+.bib-url-link {
+    background: #28a745;
 }
