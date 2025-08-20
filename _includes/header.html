@@ -10,9 +10,16 @@
         </div>
         {% endif %}
         <nav class="site-nav">
+            <!-- Burger menu button for mobile -->
+            <button class="burger-menu" id="burger-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
             <div class="left-nav">
-                <!-- add titles to all buttons -->
-                <div class="ui secondary menu inverted">
+                <!-- Desktop menu -->
+                <div class="ui secondary menu inverted desktop-menu">
                     <a class="item" href="/">
                         Home
                     </a>
@@ -52,6 +59,33 @@
                             <i class="github link icon"></i>
                         </a>
                         <a class="item" href="/feed.xml">
+                            <i class="rss link icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu (hidden by default) -->
+                <div class="mobile-menu" id="mobile-menu">
+                    <a class="mobile-item" href="/" onclick="closeMobileMenu()">Home</a>
+                    <a class="mobile-item" href="/talks.html" onclick="closeMobileMenu()">Talks</a>
+                    <a class="mobile-item" href="/publications.html" onclick="closeMobileMenu()">Publications</a>
+                    <a class="mobile-item" href="/about.html" onclick="closeMobileMenu()">About</a>
+                    <a class="mobile-item" href="/archive.html" onclick="closeMobileMenu()">Archive</a>
+                    
+                    <div class="mobile-social">
+                        <a class="mobile-social-item" href="https://www.youtube.com/user/TheMarcoag">
+                            <i class="youtube link icon"></i>
+                        </a>
+                        <a class="mobile-social-item" href="https://twitter.com/marcoagutier">
+                            <i class="twitter link icon"></i>
+                        </a>
+                        <a class="mobile-social-item" href="https://www.linkedin.com/in/marcogg">
+                            <i class="linkedin link icon"></i>
+                        </a>
+                        <a class="mobile-social-item" href="https://github.com/marcoag">
+                            <i class="github link icon"></i>
+                        </a>
+                        <a class="mobile-social-item" href="/feed.xml">
                             <i class="rss link icon"></i>
                         </a>
                     </div>

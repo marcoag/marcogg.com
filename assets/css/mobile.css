@@ -12,6 +12,15 @@
     .ui.secondary.menu.inverted .right.menu {
         flex-wrap: wrap;
     }
+    
+    /* Show burger menu, hide desktop menu */
+    .burger-menu {
+        display: flex !important;
+    }
+    
+    .desktop-menu {
+        display: none !important;
+    }
 }
 
 
