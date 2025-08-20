@@ -14,6 +14,8 @@
 
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 img, video, iframe {
@@ -56,13 +58,13 @@ header {
 /* /header */
 
 .page-wrap {
-    min-height: 100%;
-    margin-bottom: 1rem;
+    min-height: calc(100vh - 6rem);
+    display: flex;
+    flex-direction: column;
 }
 
-.page-wrap:after {
-    content: "";
-    display: block;
+main {
+    flex: 1;
 }
 
 /* footer */

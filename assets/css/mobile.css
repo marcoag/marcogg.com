@@ -4,6 +4,16 @@
     }
 }
 
+@media all and (max-width: 768px) {
+    .ui.secondary.menu.inverted p.item {
+        font-size: 13px;
+    }
+    
+    .ui.secondary.menu.inverted .right.menu {
+        flex-wrap: wrap;
+    }
+}
+
 
 @media all and (max-width: 600px) {
     .right.menu {
@@ -20,5 +30,25 @@
 
     main {
         max-width: 95%;
+    }
+
+    .footer-wrapper {
+        padding: 0 10px;
+    }
+
+    .ui.secondary.menu.inverted {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ui.secondary.menu.inverted .right.menu {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .ui.secondary.menu.inverted p.item {
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 12px;
     }
 }
